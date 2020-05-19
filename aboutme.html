@@ -2,53 +2,97 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" language="javascript" type="text/javascript"></script>
+		<script src="https://kit.fontawesome.com/60ba3855ae.js" crossorigin="anonymous"></script>
+		<script src="./js/portfolio.js"></script>
 		<meta name="Author" content="Calvin Voss">
 		<meta name="Description" content="This page is all about me">
 		<title>About Me</title>
 	</head>
-	<body>
-		<header name="aboutme">
-			About Me
-		</header>
-		<nav>
-
-		</nav>
-		<section name="origin">
-			<article>
-				Hello, my name is Calvin Voss. I am a software developer from Kalamazoo Michigan. I am a fourth year double major in Discrete Mathematics and Computer Science at Michigan Technological University
-			</article>
-		</section>
-		<section name="hobbies">
-			<article>
-				Hobbies
-				<li>Hockey</li>
-				<li>Golf</li>
-				<li>Fishing</li>
-			</article>
-		</section>
-		<section name="education">
-			<article>
-				Education
-				<li>Portage Northern High School</li>
-				<li>Michigan Technological University</li>
-			</article>
-		</section>
-		<footer>
-			<a name="github" href="https://github.com/mtu-cvoss">
-				<article>
-					GitHub
-				</article>
-			</a>
-			<a name="linkedin" href="https://www.linkedin.com/in/calvin-voss/">
-				<article>
-					LinkedIn
-				</article>
-			</a>
-			<a name="handshake" href="https://mtu.joinhandshake.com/users/3798139">
-				<article>
-					Handshake
-				</article>
-			</a>
-		</footer>
+	<body class="nothome">
+		<div class="body">
+			<nav id="sidebar" class="navnav">
+				<div class="navlist">
+					<ul class="sidebarlist">
+						<li><a href="home.html" class="toplink">Home</a></li>
+						<li><a href="portfolio.html" class="toplink">Portfolio</a></li>
+						<li><a href="aboutme.html" class="toplink">About Me</a></li>
+						<li><a href="contactme.html" class="toplink">Contact Me</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="aboutmetitlecontainer">
+				<p class="aboutmetitle">
+					ABOUT ME
+				</p>
+			</div>
+			<div class="originstorycontainer">
+				<p class="originstory">
+					Hello, my name is Calvin Voss. I am a software developer from Kalamazoo Michigan. I am a fourth year double major in Discrete Mathematics and Computer Science at Michigan Technological University
+				</p>
+			</div>
+			<div class="aboutmecontentcontainer">
+				<div class="hobbies">
+					<ul>
+						<h3>Hobbies</h3>
+						<li>Hockey</li>
+						<li>Golf</li>
+						<li>Fishing</li>
+					</ul>
+				</div>
+				<div class="education">
+					<ul>
+						<h3>Education</h3>
+						<li>
+							<tr>
+								<td>Portage Northern High School</td>
+								<td class="year">2017</td>
+							</tr>
+						</li>
+						<li>
+							<tr>
+								<td>Michigan Technological University</td>
+								<td class="year">2021</td>
+							</tr>
+						</li>
+						<li> - Discrete Mathematics, B.S.</li>
+						<li> - Computer Science, B.S.</li>
+						<li> - Spanish Minor</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<nav class="footnav">
+				<div class="pageslist">
+					<ul class="footerlist">
+						<li><a href="home.html" class="botlink">Home</a></li>
+						<li><a href="portfolio.html" class="botlink">Portfolio</a></li>
+						<li><a href="aboutme.html" class="botlink">About Me</a></li>
+						<li><a href="contactme.html" class="botlink">Contact Me</a></li>
+					</ul>
+				</div>
+				<div class="linkcontainer">
+					<ul class="listcontainer">
+						<li>
+							<div class="githubcontainer">
+								<a name="github" href="https://github.com/mtu-cvoss"><img border="0" src="./img/GitHub-Mark-Light-120px-plus.png" width="75" height="75"></a>
+							</div>
+						</li>
+						<li>
+							<div class="linkedincontainer">
+								<a name="linkedin" href="https://www.linkedin.com/in/calvin-voss/"><img border="0" src="./img/LI-In-Bug.png" width="88" height="75"></a>
+							</div>
+						</li>
+						<li>
+							<div class="handshakecontainer">
+								<a name="handshake" href="https://mtu.joinhandshake.com/users/3798139"><img border="0" src="./img/handshake_mark_light.png" width="75" height="75"></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 	</body>
 </html>
