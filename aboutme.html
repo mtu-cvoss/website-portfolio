@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" language="javascript" type="text/javascript"></script>
 		<script src="https://kit.fontawesome.com/60ba3855ae.js" crossorigin="anonymous"></script>
 		<script src="./js/portfolio.js"></script>
@@ -11,7 +12,7 @@
 		<title>About Me</title>
 	</head>
 	<body class="nothome">
-		<div class="body">
+		<div class="bodytest">
 			<nav id="sidebar" class="navnav">
 				<div class="navlist">
 					<ul class="sidebarlist">
@@ -22,44 +23,63 @@
 					</ul>
 				</div>
 			</nav>
-			<div class="aboutmetitlecontainer">
-				<p class="aboutmetitle">
-					ABOUT ME
-				</p>
-			</div>
-			<div class="originstorycontainer">
-				<p class="originstory">
-					Hello, my name is Calvin Voss. I am a software developer from Kalamazoo Michigan. I am a fourth year double major in Discrete Mathematics and Computer Science at Michigan Technological University
-				</p>
-			</div>
-			<div class="aboutmecontentcontainer">
-				<div class="hobbies">
-					<ul>
-						<h3>Hobbies</h3>
-						<li>Hockey</li>
-						<li>Golf</li>
-						<li>Fishing</li>
-					</ul>
+			<div class="row">
+				<div class="col-md-6 aboutmetitlecontainer">
+					<p class="aboutmetitle">
+						ABOUT ME
+					</p>
+					<br>
+					<p class="originstory originstorycontainer">
+						Hello, my name is Calvin Voss. I am a software developer from Kalamazoo Michigan. I am a fourth year double major in Discrete Mathematics and Computer Science at Michigan Technological University
+					</p>
 				</div>
-				<div class="education">
-					<ul>
-						<h3>Education</h3>
-						<li>
-							<tr>
-								<td>Portage Northern High School</td>
-								<td class="year">2017</td>
-							</tr>
-						</li>
-						<li>
-							<tr>
-								<td>Michigan Technological University</td>
-								<td class="year">2021</td>
-							</tr>
-						</li>
-						<li> - Discrete Mathematics, B.S.</li>
-						<li> - Computer Science, B.S.</li>
-						<li> - Spanish Minor</li>
-					</ul>
+				<div class="col-md-6 picofme">
+					<img src="./img/First_Edit2.jpg" alt="" height="750">
+				</div>
+			</div>
+			<div class="row">
+				<div class="aboutmecontentcontainer">
+					<div class="col-md-4">
+						<div class="hobbies amcc">
+							<ul>
+								<h3>HOBBIES</h3>
+								<li class="amccli hob">Hockey</li>
+								<li class="amccli hob">Golf</li>
+								<li class="amccli hob">Fishing</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="education amcc">
+							<ul>
+								<h3>EDUCATION</h3>
+								<li class="amccli edu">
+									<div class="row">
+										<div class="col-md-10">
+											<p>Portage Northern High School</p>
+										</div>
+										<div class="col-md-2 year">
+											<p>2017</p>
+										</div>
+									</div>
+								</li>
+								<br>
+								<li class="amccli edu">
+									<div class="row">
+										<div class="col-md-10">
+											<p>Michigan Technological University</p>
+										</div>
+										<div class="col-md-2 year">
+											<p>2021</p>
+										</div>
+									</div>
+								</li>
+								<li class="amccli edu">- Discrete Mathematics, B.S.</li>
+								<li class="amccli edu">- Computer Science, B.S.</li>
+								<li class="amccli edu">- Spanish Minor</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

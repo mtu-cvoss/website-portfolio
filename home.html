@@ -2,7 +2,8 @@
 <html>
 	<head lang="en" dir="ltr">
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" language="javascript" type="text/javascript"></script>
 		<script src="https://kit.fontawesome.com/60ba3855ae.js" crossorigin="anonymous"></script>
 		<script src="./js/portfolio.js"></script>
@@ -10,8 +11,8 @@
 		<meta name="Description" content="This is the homepage for the portfolio of Calvin Voss">
 		<title>Home</title>
 	</head>
-	<body class="home">
-		<div class="body">
+	<body class="homepage">
+		<div class="bodytest">
 			<nav id="sidebar" class="navnav">
 				<div class="navlist">
 					<ul class="sidebarlist">
@@ -22,22 +23,26 @@
 					</ul>
 				</div>
 			</nav>
-			<div class="nametitlecontainer">
-				<div class="namecontainer">
-					<p class="name">
-						Calvin Voss
-					</p>
-				</div>
-				<div class="titlecontainer">
-					<p class="title">
-						Full Stack Software Developer
-					</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 nametitlecontainer">
+						<div class="namecontainer">
+							<p class="name">
+								Calvin Voss
+							</p>
+						</div>
+						<div class="titlecontainer">
+							<p class="title">
+								Full Stack Software Developer
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="summarycontainer">
 				<div class="summarytitlecontainer">
 					<p class="summarytitle">
-						Summary
+						SUMMARY
 					</p>
 				</div>
 				<div class="summaryinfocontainer">
@@ -49,32 +54,36 @@
 		</div>
 		<div class="footer">
 			<nav class="footnav">
-				<div class="pageslist">
-					<ul class="footerlist">
-						<li><a href="home.html" class="botlink">Home</a></li>
-						<li><a href="portfolio.html" class="botlink">Portfolio</a></li>
-						<li><a href="aboutme.html" class="botlink">About Me</a></li>
-						<li><a href="contactme.html" class="botlink">Contact Me</a></li>
-					</ul>
+				<div class="row">
+					<div class="pageslist">
+						<ul class="footerlist">
+							<li><a href="home.html" class="botlink">Home</a></li>
+							<li><a href="portfolio.html" class="botlink">Portfolio</a></li>
+							<li><a href="aboutme.html" class="botlink">About Me</a></li>
+							<li><a href="contactme.html" class="botlink">Contact Me</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="linkcontainer">
-					<ul class="listcontainer">
-						<li>
-							<div class="githubcontainer">
-								<a name="github" href="https://github.com/mtu-cvoss"><img border="0" src="./img/GitHub-Mark-Light-120px-plus.png" width="75" height="75"></a>
-							</div>
-						</li>
-						<li>
-							<div class="linkedincontainer">
-								<a name="linkedin" href="https://www.linkedin.com/in/calvin-voss/"><img border="0" src="./img/LI-In-Bug.png" width="88" height="75"></a>
-							</div>
-						</li>
-						<li>
-							<div class="handshakecontainer">
-								<a name="handshake" href="https://mtu.joinhandshake.com/users/3798139"><img border="0" src="./img/handshake_mark_light.png" width="75" height="75"></a>
-							</div>
-						</li>
-					</ul>
+				<div class="row">
+					<div class="linkcontainer">
+						<ul class="listcontainer">
+							<li>
+								<div class="col-md-4 githubcontainer">
+									<a name="github" href="https://github.com/mtu-cvoss"><img border="0" src="./img/GitHub-Mark-Light-120px-plus.png" width="75" height="75"></a>
+								</div>
+							</li>
+							<li>
+								<div class="col-md-4 linkedincontainer">
+									<a name="linkedin" href="https://www.linkedin.com/in/calvin-voss/"><img border="0" src="./img/LI-In-Bug.png" width="88" height="75"></a>
+								</div>
+							</li>
+							<li>
+								<div class="col-md-4 handshakecontainer">
+									<a name="handshake" href="https://mtu.joinhandshake.com/users/3798139"><img border="0" src="./img/handshake_mark_light.png" width="75" height="75"></a>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 		</div>
