@@ -2,93 +2,192 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" language="javascript" type="text/javascript"></script>
+		<script src="https://kit.fontawesome.com/60ba3855ae.js" crossorigin="anonymous"></script>
+		<script src="./js/portfolio.js"></script>
 		<meta name="Author" content="Calvin Voss">
 		<meta name="Description" content="This is the project information for Calvin Voss">
 		<title>Portfolio</title>
 	</head>
-	<body>
-		<nav>
+	<body class="nothome">
+		<div class="bodytest">
+			<nav id="sidebar" class="navnav">
+				<div class="navlist">
+					<ul class="sidebarlist">
+						<li><a href="home.html" class="toplink">Home</a></li>
+						<li><a href="portfolio.html" class="toplink">Portfolio</a></li>
+						<li><a href="aboutme.html" class="toplink">About Me</a></li>
+						<li><a href="contactme.html" class="toplink">Contact Me</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="row">
+				<div class="col-md-12 aboutmetitlecontainer">
+					<p class="contactmetitle">
+						PORTFOLIO
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">
 
-		</nav>
-		<header name="portfolio">
-			Portfolio
-		</header>
-		<section name="currentrole">
-			<li>
-				<article>
-					Math Learning Center
-				</article>
-				<article>
-					Role: Math Coach
-				</article>
-			</li>
-			<li>
-				<article>
-					IT Oxygen Student Enterprise
-				</article>
-				<article>
-					Roles: Vice President and Team Lead
-				</article>
-			</li>
-		</section>
-		<section>
-			<article class="project">
-				<a href="project1.html">
-					<section>
-						<article class="projectname" name="sampleproj1">
-							Sample Project 1
-						</article>
-						<article class="company" name="company1">
-							Company: Company 1
-						</article>
-						<article class="myrole" name="role1">
-							My Role: Role 1
-						</article>
-						<article class="sponsor" name="sponsor1">
-							Sponsor: Sponsor 1
-						</article>
-						<article class="projdescription" name="description1">
-							Description 1
-						</article>
-					</section>
-				</a>
-				<a>
-					<section>
-						<article class="projectname" name="sampleproj2">
-							Sample Project 2
-						</article>
-						<article class="company" name="company2">
-							Company: Company 2
-						</article>
-						<article class="myrole" name="role2">
-							My Role: Role 2
-						</article>
-						<article class="sponsor" name="sponsor2">
-							Sponsor: Sponsor 2
-						</article>
-						<article class="projdescription" name="description2">
-							Description 2
-						</article>
-					</section>
-				</a>
-			</article>
-		</section>
-		<footer>
-			<a name="github" href="https://github.com/mtu-cvoss">
-				<article>
-					GitHub
-				</article>
-			</a>
-			<a name="linkedin" href="https://www.linkedin.com/in/calvin-voss/">
-				<article>
-					LinkedIn
-				</article>
-			</a>
-			<a name="handshake" href="https://mtu.joinhandshake.com/users/3798139">
-				<article>
-					Handshake
-				</article>
-			</a>
-		</footer>
+				</div>
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-12">
+							<p>Current Jobs and Roles</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<p>ITOxygen Student Enterprise</p>
+						</div>
+						<div class="col-md-6">
+							<p>Math Learning Center</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<p>Roles: Vice President</p>
+						</div>
+						<div class="col-md-6">
+							<p>Role: Math Coach</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+
+				</div>
+				<div class="col-md-8 projects">
+					<div class="row projectitem">
+						<form class="" action="./php/portfolioitem.php" method="post">
+							<input type="hidden" name="projname" value="">
+							<input type="hidden" name="company" value="">
+							<input type="hidden" name="myrole" value="">
+							<input type="hidden" name="sponsor" value="">
+							<input type="hidden" name="projdesc" value="">
+							<input type="hidden" name="techutil" value="">
+							<button type="submit" value="Submit" class="itembtn">
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projectname" name="sampleproj1">
+											Sample Project 1
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<p class="portfcompany" name="company1">
+											Company: Company 1
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="myrole" name="role1">
+											My Role: Role 1
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="sponsor" name="sponsor1">
+											Sponsor: Sponsor 1
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projdescription" name="description1">
+											Description 1
+										</p>
+									</div>
+								</div>
+							</button>
+						</form>
+					</div>
+					<div class="row projectitem">
+						<form class="" action="./php/portfolioitem.php" method="post">
+							<input type="hidden" name="projname" value="">
+							<input type="hidden" name="company" value="">
+							<input type="hidden" name="myrole" value="">
+							<input type="hidden" name="sponsor" value="">
+							<input type="hidden" name="projdesc" value="">
+							<input type="hidden" name="techutil" value="">
+							<button type="submit" value="Submit" class="itembtn">
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projectname" name="sampleproj2">
+											Sample Project 2
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<p class="portfcompany" name="company2">
+											Company: Company 2
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="myrole" name="role2">
+											My Role: Role 2
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="sponsor" name="sponsor2">
+											Sponsor: Sponsor 2
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projdescription" name="description2">
+											Description 2
+										</p>
+									</div>
+								</div>
+							</button>
+						</form>
+					</div>
+					<div class="col-md-2">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<nav class="footnav">
+				<div class="pageslist">
+					<ul class="footerlist">
+						<li><a href="home.html" class="botlink">Home</a></li>
+						<li><a href="portfolio.html" class="botlink">Portfolio</a></li>
+						<li><a href="aboutme.html" class="botlink">About Me</a></li>
+						<li><a href="contactme.html" class="botlink">Contact Me</a></li>
+					</ul>
+				</div>
+				<div class="linkcontainer">
+					<ul class="listcontainer">
+						<li>
+							<div class="githubcontainer">
+								<a name="github" href="https://github.com/mtu-cvoss"><img border="0" src="./img/GitHub-Mark-Light-120px-plus.png" width="75" height="75"></a>
+							</div>
+						</li>
+						<li>
+							<div class="linkedincontainer">
+								<a name="linkedin" href="https://www.linkedin.com/in/calvin-voss/"><img border="0" src="./img/LI-In-Bug.png" width="88" height="75"></a>
+							</div>
+						</li>
+						<li>
+							<div class="handshakecontainer">
+								<a name="handshake" href="https://mtu.joinhandshake.com/users/3798139"><img border="0" src="./img/handshake_mark_light.png" width="75" height="75"></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 	</body>
 </html>

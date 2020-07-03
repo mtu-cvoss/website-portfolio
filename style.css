@@ -243,3 +243,43 @@ body {
 	border-radius: 50%;
 	padding: 50px;
 }
+
+.contactmetitle {
+	font-family: Microsoft Yi Baiti;
+	text-transform: capitalize;
+	font-size: 150px;
+	text-decoration: underline;
+	margin-top: 0px;
+	margin-left: 150px;
+	margin-bottom: 0;
+	text-align: left;
+	padding-bottom: 100px;
+}
+
+.contactinfo {
+	text-align: left;
+	font-size: 30px;
+}
+
+.contactimg {
+	text-align: right;
+}
+
+.projects {
+	overflow-y: scroll;
+	height: 200px;
+}
+
+.itembtn {
+	width: 99.5%;
+	background-color: #2BC9BE;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.itembtn:hover {
+	background-color: #0B0C10;
+	color: #2BC9BE;
+	border: 2px solid #2BC9BE;
+}
