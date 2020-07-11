@@ -8,7 +8,7 @@
 		<script src="https://kit.fontawesome.com/60ba3855ae.js" crossorigin="anonymous"></script>
 		<script src="./js/portfolio.js"></script>
 		<meta name="Author" content="Calvin Voss">
-		<meta name="Description" content="This is the project information for Calvin Voss">
+		<meta name="Description" content="This is the portfolio for Calvin Voss">
 		<title>Portfolio</title>
 	</head>
 	<body class="nothome">
@@ -34,25 +34,25 @@
 				<div class="col-md-2">
 
 				</div>
-				<div class="col-md-8">
+				<div class="col-md-8 rolesandjobs">
 					<div class="row">
-						<div class="col-md-12">
-							<p>Current Jobs and Roles</p>
+						<div class="col-md-12 curjobtitle">
+							<p>CURRENT JOBS AND ROLES</p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 curcomp currole">
 							<p>ITOxygen Student Enterprise</p>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 curcomp currole">
 							<p>Math Learning Center</p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 currole">
 							<p>Roles: Vice President</p>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 currole">
 							<p>Role: Math Coach</p>
 						</div>
 					</div>
@@ -67,42 +67,45 @@
 				</div>
 				<div class="col-md-8 projects">
 					<div class="row projectitem">
-						<form class="" action="./php/portfolioitem.php" method="post">
-							<input type="hidden" name="projname" value="">
-							<input type="hidden" name="company" value="">
-							<input type="hidden" name="myrole" value="">
-							<input type="hidden" name="sponsor" value="">
-							<input type="hidden" name="projdesc" value="">
-							<input type="hidden" name="techutil" value="">
+						<form class="portitemform" action="./php/portfolioitem.php" method="post">
+							<input type="hidden" name="projname" value="XBOX PRE-PROJECT">
+							<input type="hidden" name="projnameu" value="Xbox Pre-Project">
+							<input type="hidden" name="company" value="ITOxygen">
+							<input type="hidden" name="myrole" value="Team Lead and Developer">
+							<input type="hidden" name="sponsor" value="ITOxygen">
+							<input type="hidden" name="projdesc" value="The Xbox Pre-Project was intended as a project to become familiar with the .NET framework as well as developing an application for an Xbox.  It turned into a way for ITOxygen to promote itself at events and give interested persons an opportunity to discover what projects we have been tasked with and what technologies we use.  While not fully completed, more than a minimum viable product was created with a better understanding of development on an Xbox app.">
+							<input type="hidden" name="techutil[0]" value=".NET Infrastructure">
+							<input type="hidden" name="techutil[1]" value="Universal Windows Platform">
+							<input type="hidden" name="techutil[2]" value="SQL Database">
 							<button type="submit" value="Submit" class="itembtn">
 								<div class="row">
 									<div class="col-md-12">
-										<p class="projectname" name="sampleproj1">
-											Sample Project 1
+										<p class="projectname" name="xboxpreproject">
+											XBOX PRE-PROJECT
 										</p>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-4">
-										<p class="portfcompany" name="company1">
-											Company: Company 1
+										<p class="portfcompany" name="itoxygen">
+											Company: ITOxygen
 										</p>
 									</div>
 									<div class="col-md-4">
-										<p class="myrole" name="role1">
-											My Role: Role 1
+										<p class="myrole" name="teamlead dev">
+											My Role: Team Lead and Developer
 										</p>
 									</div>
 									<div class="col-md-4">
-										<p class="sponsor" name="sponsor1">
-											Sponsor: Sponsor 1
+										<p class="sponsor" name="itoxygen">
+											Sponsor: ITOxygen
 										</p>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-12">
-										<p class="projdescription" name="description1">
-											Description 1
+										<p class="projdescription" name="xppdesc">
+											The Xbox Pre-Project was intended as a project to become familiar with the .NET framework as well as developing an application for an Xbox.  It turned into a way for ITOxygen to promote itself at events and give interested persons an opportunity to discover what projects we have been tasked with and what technologies we use.  While not fully completed, more than a minimum viable product was created with a better understanding of development on an Xbox app.
 										</p>
 									</div>
 								</div>
@@ -110,51 +113,327 @@
 						</form>
 					</div>
 					<div class="row projectitem">
-						<form class="" action="./php/portfolioitem.php" method="post">
-							<input type="hidden" name="projname" value="">
-							<input type="hidden" name="company" value="">
-							<input type="hidden" name="myrole" value="">
-							<input type="hidden" name="sponsor" value="">
-							<input type="hidden" name="projdesc" value="">
-							<input type="hidden" name="techutil" value="">
+						<form class="portitemform" action="./php/portfolioitem.php" method="post">
+							<input type="hidden" name="projname" value="PORTER FAMILY VINEYARD PROJECT">
+							<input type="hidden" name="projnameu" value="Porter Family Vineyard Project">
+							<input type="hidden" name="company" value="ITOxygen">
+							<input type="hidden" name="myrole" value="Developer">
+							<input type="hidden" name="sponsor" value="Porter Family Vineyard">
+							<input type="hidden" name="projdesc" value="My first non-schoolwork programming project ever.  I learned a huge amount of things before I even took the class.  This was my first exposure to SQL statements, connecting to a database, AWS S3, and a few smaller things.  The client wanted a script that would take his .csv export from Quickbooks and modify it to upload to an AWS database which would then be displayed in Power BI.  My job was to create the part of the script to connect to the database and upload the data.  The script was made in Java since that is what both me and the other developer were very new and we both knew Java.">
+							<input type="hidden" name="techutil[0]" value="AWS S3">
+							<input type="hidden" name="techutil[1]" value="Java">
+							<input type="hidden" name="techutil[2]" value="SQL">
 							<button type="submit" value="Submit" class="itembtn">
 								<div class="row">
 									<div class="col-md-12">
-										<p class="projectname" name="sampleproj2">
-											Sample Project 2
+										<p class="projectname" name="pfvproj">
+											PORTER FAMILY VINEYARD PROJECT
 										</p>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-4">
-										<p class="portfcompany" name="company2">
-											Company: Company 2
+										<p class="portfcompany" name="itoxygen">
+											Company: ITOxygen
 										</p>
 									</div>
 									<div class="col-md-4">
-										<p class="myrole" name="role2">
-											My Role: Role 2
+										<p class="myrole" name="dev">
+											My Role: Developer
 										</p>
 									</div>
 									<div class="col-md-4">
-										<p class="sponsor" name="sponsor2">
-											Sponsor: Sponsor 2
+										<p class="sponsor" name="pfv">
+											Sponsor: Porter Family Vineyard
 										</p>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-12">
-										<p class="projdescription" name="description2">
-											Description 2
+										<p class="projdescription" name="pfvdesc">
+											My first non-schoolwork programming project ever.  I learned a huge amount of things before I even took the class.  This was my first exposure to SQL statements, connecting to a database, AWS S3, and a few smaller things.  The client wanted a script that would take his .csv export from Quickbooks and modify it to upload to an AWS database which would then be displayed in Power BI.  My job was to create the part of the script to connect to the database and upload the data.  The script was made in Java since that is what both me and the other developer were very new and we both knew Java.
 										</p>
 									</div>
 								</div>
 							</button>
 						</form>
 					</div>
-					<div class="col-md-2">
-
+					<div class="row projectitem">
+						<form class="portitemform" action="./php/portfolioitem.php" method="post">
+							<input type="hidden" name="projname" value="LUTHERAN SEMINARY PROJECT">
+							<input type="hidden" name="projnameu" value="Lutheran Seminary Project">
+							<input type="hidden" name="company" value="ITOxygen">
+							<input type="hidden" name="myrole" value="Developer">
+							<input type="hidden" name="sponsor" value="Lutheran Seminary">
+							<input type="hidden" name="projdesc" value="The Lutheran Seminary project was a continuation of an old project in which ITOxygen was hired to create a website for the Lutheran Seminary in Hancock, MI.  Our project was to evaluate the website since there were some issues with hosting and content on the webpages.  I was tasked with evaluating why certain things were not functioning properly, which involved looking into the HTML and PHP of the website and determining what may or may not be going wrong.  There were also smaller updates that were causing confusion for the workers at Lutheran Seminary.">
+							<input type="hidden" name="techutil[0]" value="HTML">
+							<input type="hidden" name="techutil[1]" value="PHP">
+							<button type="submit" value="Submit" class="itembtn">
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projectname" name="lutheranseminaryproject">
+											LUTHERAN SEMINARY PROJECT
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<p class="portfcompany" name="itoxygen">
+											Company: ITOxygen
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="myrole" name="dev">
+											My Role: Developer
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="sponsor" name="lutheranseminary">
+											Sponsor: Lutheran Seminary
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projdescription" name="lsdesc">
+											The Lutheran Seminary project was a continuation of an old project in which ITOxygen was hired to create a website for the Lutheran Seminary in Hancock, MI.  Our project was to evaluate the website since there were some issues with hosting and content on the webpages.  I was tasked with evaluating why certain things were not functioning properly, which involved looking into the HTML and PHP of the website and determining what may or may not be going wrong.  There were also smaller updates that were causing confusion for the workers at Lutheran Seminary.
+										</p>
+									</div>
+								</div>
+							</button>
+						</form>
 					</div>
+					<div class="row projectitem">
+						<form class="portitemform" action="./php/portfolioitem.php" method="post">
+							<input type="hidden" name="projname" value="ITO SECURITY ASSESSMENT">
+							<input type="hidden" name="projnameu" value="ITO Security Assessment">
+							<input type="hidden" name="company" value="ITOxygen">
+							<input type="hidden" name="myrole" value="Consultant">
+							<input type="hidden" name="sponsor" value="ITOxygen">
+							<input type="hidden" name="projdesc" value="The security assessment project was created by a member of ITOxygen in order to fulfill a senior design requirement.  Our job was to evaluate the enterprise and create a few policies according to the latest NIST guidelines.  One such policy was a password policy for the enterprise.  Our writeup was then handed to the enterprise as a way to understand possible vulnerabilities and to implement policies.">
+							<input type="hidden" name="techutil[0]" value="NIST Security Standards">
+							<button type="submit" value="Submit" class="itembtn">
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projectname" name="itosecassess">
+											ITO SECURITY ASSESSMENT
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<p class="portfcompany" name="itoxygen">
+											Company: ITOxygen
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="myrole" name="consultant">
+											My Role: Consultant
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="sponsor" name="itoxygen">
+											Sponsor: ITOxygen
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projdescription" name="itosadesc">
+											The security assessment project was created by a member of ITOxygen in order to fulfill a senior design requirement.  Our job was to evaluate the enterprise and create a few policies according to the latest NIST security standards.  One such policy was a password policy for the enterprise.  Our writeup was then handed to the enterprise as a way to understand possible vulnerabilities and to implement policies.
+										</p>
+									</div>
+								</div>
+							</button>
+						</form>
+					</div>
+					<div class="row projectitem">
+						<form class="portitemform" action="./php/portfolioitem.php" method="post">
+							<input type="hidden" name="projname" value="DAILY PRODUCTION REPORT AUTOMATION">
+							<input type="hidden" name="projnameu" value="Daily Production Report Automation">
+							<input type="hidden" name="company" value="Ford Motor Company">
+							<input type="hidden" name="myrole" value="RPA Intern">
+							<input type="hidden" name="sponsor" value="Ford Motor Company">
+							<input type="hidden" name="projdesc" value="The Daily Production Report (DPR) Automation was the first project I had ever completed for a bigger company.  I was a part of the Global Order to Delivery (GOTD) IT department and specifically interned for the Pega Robotic Process Automation (RPA) team.  Essentially, it would mimic a user's actions and every month, it would copy the projected numbers for all North American assembly plants into the actual numbers so that the manufacturing plants were able to see their goals and edit the numbers in case their production numbers did not end up being the same.  In this project, I was responsible for doing everything from my design document to setting up meetings with the customer, to tracking and completing the actual development, to making the final guide for the customer.  I was able to complete one production run on top of multiple QA runs before my time at Ford was over and it was successfully completed.">
+							<input type="hidden" name="techutil[0]" value="Pega RPA">
+							<input type="hidden" name="techutil[1]" value="HTML">
+							<input type="hidden" name="techutil[2]" value=".NET Infrastructure">
+							<button type="submit" value="Submit" class="itembtn">
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projectname" name="dpra">
+											DAILY PRODUCTION REPORT AUTOMATION
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<p class="portfcompany" name="fmc">
+											Company: Ford Motor Company
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="myrole" name="gotdrpaintern">
+											My Role: GOTD RPA Intern
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="sponsor" name="Ford Motor Company">
+											Sponsor: Ford Motor Company
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projdescription" name="dpradesc">
+											The Daily Production Report (DPR) Automation was the first project I had ever completed for a bigger company.  I was a part of the Global Order to Delivery (GOTD) IT department and specifically interned for the Pega Robotic Process Automation (RPA) team.  Essentially, it would mimic a user's actions and every month, it would copy the projected numbers for all North American assembly plants into the actual numbers so that the manufacturing plants were able to see their goals and edit the numbers in case their production numbers did not end up being the same.  In this project, I was responsible for doing everything from my design document to setting up meetings with the customer, to tracking and completing the actual development, to making the final guide for the customer.  I was able to complete one production run on top of multiple QA runs before my time at Ford was over and it was successfully completed.
+										</p>
+									</div>
+								</div>
+							</button>
+						</form>
+					</div>
+					<div class="row projectitem">
+						<form class="portitemform" action="./php/portfolioitem.php" method="post">
+							<input type="hidden" name="projname" value="PORTFOLIO WEBSITE">
+							<input type="hidden" name="projnameu" value="Portfolio Website">
+							<input type="hidden" name="company" value="Self">
+							<input type="hidden" name="myrole" value="Web Developer">
+							<input type="hidden" name="sponsor" value="Self">
+							<input type="hidden" name="projdesc" value="The Portfolio Website was an obvious choice as I transitioned from university to industry.  I wanted a place to highlight all of the projects I worked on and free up some space on my resume.  Additionally, it was a way to give potential employers a way to learn more about me and what I have done before and/or after interviews.  I made this website with HTML, CSS, and PHP, and while it does not use any JS, any spot that I thought I could use it in I tried and subsequently failed.  Overall, I would give this project a success since it turned out almost exactly how I wanted it to.">
+							<input type="hidden" name="techutil[0]" value="HTML">
+							<input type="hidden" name="techutil[1]" value="CSS">
+							<input type="hidden" name="techutil[2]" value="PHP">
+							<input type="hidden" name="techutil[3]" value="Adobe XD">
+							<button type="submit" value="Submit" class="itembtn">
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projectname" name="portweb">
+											PORTFOLIO WEBSITE
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<p class="portfcompany" name="self">
+											Company: Self
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="myrole" name="dev">
+											My Role: Web Developer
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="sponsor" name="Self">
+											Sponsor: Self
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projdescription" name="pwdesc">
+											The Portfolio Website was an obvious choice as I transitioned from university to industry.  I wanted a place to highlight all of the projects I worked on and free up some space on my resume.  Additionally, it was a way to give potential employers a way to learn more about me and what I have done before and/or after interviews.  I made this website with HTML, CSS, and PHP, and while it does not use any JS, any spot that I thought I could use it in I tried and subsequently failed.  Overall, I would give this project a success since it turned out almost exactly how I wanted it to.
+										</p>
+									</div>
+								</div>
+							</button>
+						</form>
+					</div>
+					<div class="row projectitem">
+						<form class="portitemform" action="./php/portfolioitem.php" method="post">
+							<input type="hidden" name="projname" value="PERSISTENT MEMORY RESEARCH">
+							<input type="hidden" name="projnameu" value="Persistent Memory Research">
+							<input type="hidden" name="company" value="Michigan Technological University">
+							<input type="hidden" name="myrole" value="Researcher">
+							<input type="hidden" name="sponsor" value="National Science Foundation Research Experiences for Undergraduates">
+							<input type="hidden" name="projdesc" value="This project is still currently underway, however I was hired at the beginning of my summer in 2020 to perform research on persistent memory.  Persistent memory (PM) is storage elements that act like RAM.  It is useful in situations like unexpected power outages where processes are able to store their memory through a power outage, and then continue from the point where they were interrupted.  The data in the persistent memory is stored in certain data structures, and my research revolves around finding the most effective data structure to transfer the data from memory to storage.  This will allow more data to be transferred with less power used.">
+							<input type="hidden" name="techutil[0]" value="C++">
+							<input type="hidden" name="techutil[1]" value="C">
+							<input type="hidden" name="techutil[2]" value="Visual Studio Code Insiders">
+							<button type="submit" value="Submit" class="itembtn">
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projectname" name="pmr">
+											PERSISTENT MEMORY RESEARCH
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<p class="portfcompany" name="mtu">
+											Company: Michigan Technological University
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="myrole" name="researcher">
+											My Role: Researcher
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="sponsor" name="nsfreu">
+											Sponsor: National Science Foundation Research Experiences for Undergraduates
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projdescription" name="pmrdesc">
+											This project is still currently underway, however I was hired at the beginning of my summer in 2020 to perform research on persistent memory.  Persistent memory (PM) is storage elements that act like RAM.  It is useful in situations like unexpected power outages where processes are able to store their memory through a power outage, and then continue from the point where they were interrupted.  The data in the persistent memory is stored in certain data structures, and my research revolves around finding the most effective data structure to transfer the data from memory to storage.  This will allow more data to be transferred with less power used.
+										</p>
+									</div>
+								</div>
+							</button>
+						</form>
+					</div>
+					<div class="row projectitem">
+						<form class="portitemform" action="./php/portfolioitem.php" method="post">
+							<input type="hidden" name="projname" value="NORTHERN SPECIALTY HEALTH PROJECT">
+							<input type="hidden" name="projnameu" value="Northern Specialty Health Project">
+							<input type="hidden" name="company" value="ITOxygen">
+							<input type="hidden" name="myrole" value="Developer">
+							<input type="hidden" name="sponsor" value="Northern Specialty Health">
+							<input type="hidden" name="projdesc" value="Please contact Michigan Tech's University Marketing and Communications regarding further information on this project.">
+							<input type="hidden" name="techutil[0]" value="VMWare Workstation">
+							<input type="hidden" name="techutil[1]" value="NodeJS">
+							<button type="submit" value="Submit" class="itembtn">
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projectname" name="nshp">
+											NORTHERN SPECIALTY HEALTH PROJECT
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<p class="portfcompany" name="itoxygen">
+											Company: ITOxygen
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="myrole" name="dev">
+											My Role: Developer
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="sponsor" name="nsh">
+											Sponsor: Northern Specialty Health
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<p class="projdescription" name="nshpdesc">
+											Please contact Michigan Tech's University Marketing and Communications regarding further information on this project.
+										</p>
+									</div>
+								</div>
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-2">
+
 				</div>
 			</div>
 		</div>

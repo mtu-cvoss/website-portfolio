@@ -151,6 +151,7 @@ body {
 	background-position: center;
 	background-attachment: fixed;
 	color: #FFFFFF;
+	overflow-x: hidden;
 }
 
 .body {
@@ -167,7 +168,7 @@ body {
     width: 100%;
     height: 175px;
 	color: white;
-	margin-top: 250px;
+	margin-top: 100px;
     background: #2BC9BE;
 }
 
@@ -265,21 +266,132 @@ body {
 	text-align: right;
 }
 
+.rolesandjobs {
+	padding-bottom: 100px;
+}
+
+.currole {
+	font-family: Century Gothic;
+	font-size: 20px;
+}
+
+.curcomp {
+	font-weight: bold;
+}
+
+.curjobtitle {
+	font-family: Century Gothic;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: left;
+}
+
 .projects {
 	overflow-y: scroll;
-	height: 200px;
+	overflow-x: hidden;
+	height: 600px;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.projectitem {
+	padding-bottom: 10px;
+}
+
+.projects::-webkit-scrollbar {
+	display: none;
 }
 
 .itembtn {
 	width: 99.5%;
 	background-color: #2BC9BE;
+	color: #0B0C10;
 	border: none;
 	text-decoration: none;
 	cursor: pointer;
+	box-shadow: 10px 10px #18605D;
 }
 
 .itembtn:hover {
 	background-color: #0B0C10;
 	color: #2BC9BE;
 	border: 2px solid #2BC9BE;
+}
+
+.projectname {
+	font-family: Yu Gothic;
+	font-size: 24px;
+	text-align: left;
+	padding-left: 39px;
+
+}
+
+.portfcompany {
+	text-align: left;
+	font-family: arial;
+	font-size: 20px;
+	padding-left: 33px;
+}
+
+.myrole {
+	text-align: left;
+	font-family: arial;
+	font-size: 20px;
+}
+
+.sponsor {
+	text-align: left;
+	font-family: arial;
+	font-size: 20px;
+}
+
+.projdescription {
+	font-family: arial;
+	text-align: left;
+	font-size: 20px;
+	padding-left: 33px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.prjname {
+	font-family: Microsoft Yi Baiti;
+	text-transform: capitalize;
+	font-size: 125px;
+	text-decoration: underline;
+	margin-top: 0px;
+	margin-left: 150px;
+	margin-bottom: 0;
+	text-align: left;
+	padding-bottom: 50px;
+}
+
+.smalldesc {
+	text-align: center;
+	font-family: arial;
+	font-size: 32px;
+	padding-bottom: 10px;
+}
+
+.projectdesc p {
+	text-align: left;
+	font-family: arial;
+	font-size: 28px;
+	padding-bottom: 75px;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+.techtitle {
+	text-align: center;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 28px;
+}
+
+.tech {
+	text-align: center;
+	font-family: arial;
+	font-size: 28px;
 }
